@@ -1,0 +1,22 @@
+<h1>Tasks#index</h1>
+<p>Find me in app/views/tasks/index.html.erb</p>
+
+
+<% @tasks.each do |task| %>
+
+
+<% if task.done %>
+
+<h2> [X] <%= task.name %></h2>
+
+<% else %>
+
+<h2> [ ] <%= task.name %></h2>
+
+<% end %>
+
+<br>
+<%= link_to "More details", task_path(task) %>
+<br>
+===========================================
+<% end %>

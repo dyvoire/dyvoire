@@ -1,0 +1,13 @@
+<br>
+
+<h1><%= @task.name %></h1>
+
+
+<h2><%= @task.done %></h2>
+else
+
+
+<%= link_to "Edit", edit_task_path(@task) %>
+<%= link_to "DESTROY", task_path(@task), method: :delete %>
+<%= link_to "List all", tasks_path %>
+
